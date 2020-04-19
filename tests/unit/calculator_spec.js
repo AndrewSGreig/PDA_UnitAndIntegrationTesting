@@ -105,8 +105,8 @@ describe('calculator', function () {
   it('it can clear the previous operator when equals is clicked', function(){
     calculator.previousTotal = 4;
     calculator.runningTotal = 2;
-    calculator.previousOperator = '=';
-    calculator.operatorClick('+');
+    calculator.previousOperator = '+';
+    calculator.operatorClick('=');
     assert.equal(null, this.previousOperator);
   })
 
